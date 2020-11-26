@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <!-- 引入样式 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vant@2.8/lib/index.css">
+</head>
+<body>
+  <div id="app">
+    <form-build :form-list="formList" ref="form" :model="model">
+      <template slot="action-button">
+        <el-button block type="primary" @click="submit">提交</el-button>
+        <el-button block @click="reset">重置</el-button>
+      </template>
+    </form-build>
+  </div>
+</body>
+  <!-- 引入Vue -->
+  <script src="https://unpkg.com/vue/dist/vue.min.js"></script>
+  <!-- 引入组件库 -->
+  <script src="https://cdn.jsdelivr.net/npm/vant@2.8/lib/vant.min.js"></script>
+  <!-- TODO 引入 form-build -->
+  <script src="//unpkg.com/form-build/dist/form-build.min.js"></script>
+  <script>
+    new Vue({
+      el: '#app',
+      data: function() {
+        return { 
+          model: {},
+          formList: [/* your config */]
+        }
+      }
+    })
+  </script>
+</html>

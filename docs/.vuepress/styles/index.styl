@@ -1,0 +1,24 @@
+// 防止UI框架覆盖文档样式
+
+.theme-default-content ul
+  list-style-type: disc
+
+.theme-default-content ul ul
+  list-style-type: circle
+
+.theme-default-content ul ul ul
+  list-style-type: square
+
+.theme-default-content ol
+  list-style-type: decimal
+
+// 先不删，万一以后要用到呢
+// :not([class|=van-]) ul:not([class])
+//   list-style-type: disc
+  
+// :not([class|=van-]) ul ul:not([class])
+//   list-style-type: circle
+
+// :not([class|=van-]) ul ul ul:not([class])
+//   list-style-type: square
+
