@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>DatePicker 日期时间选择器 | form-build</title>
+    <meta name="generator" content="VuePress 1.7.1">
+    <script src="/babel.min.js"></script>
+    <script src="/babel-plugin-transform-vue-jsx.min.js"></script>
+    <meta name="description" content="让表单使用更简单">
+    
+    <link rel="preload" href="/assets/css/0.styles.e1b8fdbd.css" as="style"><link rel="preload" href="/assets/js/app.a808a774.js" as="script"><link rel="preload" href="/assets/js/5.3faf06c3.js" as="script"><link rel="preload" href="/assets/js/24.941f7c42.js" as="script"><link rel="prefetch" href="/assets/js/1.f2b6a769.js"><link rel="prefetch" href="/assets/js/10.8b3ee0e5.js"><link rel="prefetch" href="/assets/js/11.8826a813.js"><link rel="prefetch" href="/assets/js/12.0819c27c.js"><link rel="prefetch" href="/assets/js/13.caf58102.js"><link rel="prefetch" href="/assets/js/14.6bab78f3.js"><link rel="prefetch" href="/assets/js/15.fa7f1e17.js"><link rel="prefetch" href="/assets/js/16.108bd8a4.js"><link rel="prefetch" href="/assets/js/17.ca2b1418.js"><link rel="prefetch" href="/assets/js/18.70585532.js"><link rel="prefetch" href="/assets/js/19.d45761c0.js"><link rel="prefetch" href="/assets/js/2.b02075fc.js"><link rel="prefetch" href="/assets/js/20.4489bf02.js"><link rel="prefetch" href="/assets/js/21.0808d176.js"><link rel="prefetch" href="/assets/js/22.b2d663d7.js"><link rel="prefetch" href="/assets/js/23.d9d5dce8.js"><link rel="prefetch" href="/assets/js/25.1460cfaa.js"><link rel="prefetch" href="/assets/js/26.b51bdf93.js"><link rel="prefetch" href="/assets/js/27.d565192f.js"><link rel="prefetch" href="/assets/js/28.0f29a101.js"><link rel="prefetch" href="/assets/js/29.5435a29e.js"><link rel="prefetch" href="/assets/js/30.61d954b6.js"><link rel="prefetch" href="/assets/js/31.17938a13.js"><link rel="prefetch" href="/assets/js/32.a3fd47d3.js"><link rel="prefetch" href="/assets/js/33.054156de.js"><link rel="prefetch" href="/assets/js/34.0d498a84.js"><link rel="prefetch" href="/assets/js/35.dbc8e460.js"><link rel="prefetch" href="/assets/js/36.ba71e489.js"><link rel="prefetch" href="/assets/js/37.bb88fefb.js"><link rel="prefetch" href="/assets/js/38.1347c34b.js"><link rel="prefetch" href="/assets/js/39.7656c371.js"><link rel="prefetch" href="/assets/js/40.bf785273.js"><link rel="prefetch" href="/assets/js/41.200d502b.js"><link rel="prefetch" href="/assets/js/42.6c2aeea0.js"><link rel="prefetch" href="/assets/js/43.4ecc6ed5.js"><link rel="prefetch" href="/assets/js/44.afadcd36.js"><link rel="prefetch" href="/assets/js/45.b9ed98fb.js"><link rel="prefetch" href="/assets/js/46.f9780eb6.js"><link rel="prefetch" href="/assets/js/47.01903a83.js"><link rel="prefetch" href="/assets/js/48.5a48b29c.js"><link rel="prefetch" href="/assets/js/49.7a116427.js"><link rel="prefetch" href="/assets/js/50.7bf562d0.js"><link rel="prefetch" href="/assets/js/51.27a4e653.js"><link rel="prefetch" href="/assets/js/52.30092d9b.js"><link rel="prefetch" href="/assets/js/6.dfc8b1b0.js"><link rel="prefetch" href="/assets/js/7.b316f874.js"><link rel="prefetch" href="/assets/js/8.aac83945.js"><link rel="prefetch" href="/assets/js/9.4cd90a6f.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.c28731ac.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.e1b8fdbd.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">form-build</span></a> <div class="links"><form id="search-form" role="search" class="algolia-search-wrapper search-box"><input id="algolia-search-input" class="search-query"></form> <nav class="nav-links can-hide"><div class="nav-item"><a href="/guide/" class="nav-link">
+  指南
+</a></div><div class="nav-item"><a href="/config/" class="nav-link">
+  配置
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="UI框架" class="dropdown-title"><span class="title">UI框架</span> <span class="arrow down"></span></button> <button type="button" aria-label="UI框架" class="mobile-dropdown-title"><span class="title">UI框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/framework/ele-ui/" class="nav-link router-link-active">
+  ElementUI
+</a></li><li class="dropdown-item"><!----> <a href="/framework/vant/" class="nav-link">
+  Vant
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="demo" class="dropdown-title"><span class="title">demo</span> <span class="arrow down"></span></button> <button type="button" aria-label="demo" class="mobile-dropdown-title"><span class="title">demo</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/demo/ele-ui/" class="nav-link">
+  ElementUI
+</a></li><li class="dropdown-item"><!----> <a href="/demo/vant/" class="nav-link">
+  Vant
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/guide/" class="nav-link">
+  指南
+</a></div><div class="nav-item"><a href="/config/" class="nav-link">
+  配置
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="UI框架" class="dropdown-title"><span class="title">UI框架</span> <span class="arrow down"></span></button> <button type="button" aria-label="UI框架" class="mobile-dropdown-title"><span class="title">UI框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/framework/ele-ui/" class="nav-link router-link-active">
+  ElementUI
+</a></li><li class="dropdown-item"><!----> <a href="/framework/vant/" class="nav-link">
+  Vant
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="demo" class="dropdown-title"><span class="title">demo</span> <span class="arrow down"></span></button> <button type="button" aria-label="demo" class="mobile-dropdown-title"><span class="title">demo</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/demo/ele-ui/" class="nav-link">
+  ElementUI
+</a></li><li class="dropdown-item"><!----> <a href="/demo/vant/" class="nav-link">
+  Vant
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>快速上手</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/framework/ele-ui/" class="sidebar-link">介绍</a></li><li><a href="/framework/ele-ui/install/" class="sidebar-link">安装使用</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>内置组件</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/framework/ele-ui/input/" class="sidebar-link">Input 输入框</a></li><li><a href="/framework/ele-ui/autocomplete/" class="sidebar-link">Autocomplete 输入框</a></li><li><a href="/framework/ele-ui/input-number/" class="sidebar-link">InputNumber 计数器</a></li><li><a href="/framework/ele-ui/switch/" class="sidebar-link">Switch 开关</a></li><li><a href="/framework/ele-ui/slider/" class="sidebar-link">Slider滑块</a></li><li><a href="/framework/ele-ui/select/" class="sidebar-link">Select 选择器</a></li><li><a href="/framework/ele-ui/cascader/" class="sidebar-link">Cascader 级联选择器</a></li><li><a href="/framework/ele-ui/checkbox/" class="sidebar-link">Checkbox 多选框</a></li><li><a href="/framework/ele-ui/radio/" class="sidebar-link">Radio 单选框</a></li><li><a href="/framework/ele-ui/date-picker/" class="active sidebar-link">DatePicker 日期时间选择器</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/framework/ele-ui/time-picker/" class="sidebar-link">TimePicker 时间选择器</a></li><li><a href="/framework/ele-ui/time-select/" class="sidebar-link">TimeSelect 时间选项选择器</a></li><li><a href="/framework/ele-ui/upload/" class="sidebar-link">Upload 文件上传</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><div class="custom-block tip"><p class="custom-block-title">说明</p> <p><a href="https://element.eleme.cn/#/zh-CN/component/date-picker" target="_blank" rel="noopener noreferrer">DatePicker<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>和<a href="https://element.eleme.cn/#/zh-CN/component/datetime-picker" target="_blank" rel="noopener noreferrer">DateTimePicker<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>的合体。支持所有配置。</p></div> <h3 id="日期"><a href="#日期" class="header-anchor">#</a> 日期</h3> <div data-type="vue" data-config="" data-code-index="9" class="vuepress-plugin-demo-block__wrapper" style="display:none;"><div class="vuepress-plugin-demo-block__display"><div class="vuepress-plugin-demo-block__app"></div></div> <div class="vuepress-plugin-demo-block__code"><div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>form-build</span> <span class="token attr-name">:form-list</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>formList<span class="token punctuation">&quot;</span></span> <span class="token attr-name">ref</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>form<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>form-build</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      formList<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+        id<span class="token operator">:</span> <span class="token string">'date'</span><span class="token punctuation">,</span>
+        label<span class="token operator">:</span> <span class="token string">'选择日期'</span><span class="token punctuation">,</span>
+        component<span class="token operator">:</span> <span class="token string">'date-picker'</span><span class="token punctuation">,</span>
+        props<span class="token operator">:</span> <span class="token punctuation">{</span>
+          placeholder<span class="token operator">:</span> <span class="token string">'选择日期'</span><span class="token punctuation">,</span>
+          valueFormat<span class="token operator">:</span> <span class="token string">'yyyy-MM-dd'</span><span class="token punctuation">,</span>
+          clearable<span class="token operator">:</span> <span class="token boolean">true</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span><span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div></div> <script>
+    window.DEMO_BLOCK_MAP_9 = &quot;%3Ctemplate%3E%0A%20%20%3Cform-build%20%3Aform-list%3D%22formList%22%20ref%3D%22form%22%3E%3C%2Fform-build%3E%0A%3C%2Ftemplate%3E%0A%0A%3Cscript%3E%0Aexport%20default%20%7B%0A%20%20data()%20%7B%0A%20%20%20%20return%20%7B%0A%20%20%20%20%20%20formList%3A%20%5B%7B%0A%20%20%20%20%20%20%20%20id%3A%20'date'%2C%0A%20%20%20%20%20%20%20%20label%3A%20'%E9%80%89%E6%8B%A9%E6%97%A5%E6%9C%9F'%2C%0A%20%20%20%20%20%20%20%20component%3A%20'date-picker'%2C%0A%20%20%20%20%20%20%20%20props%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20placeholder%3A%20'%E9%80%89%E6%8B%A9%E6%97%A5%E6%9C%9F'%2C%0A%20%20%20%20%20%20%20%20%20%20valueFormat%3A%20'yyyy-MM-dd'%2C%0A%20%20%20%20%20%20%20%20%20%20clearable%3A%20true%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%7D%5D%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D%0A%3C%2Fscript%3E%0A&quot;
+  </script> <div class="vuepress-plugin-demo-block__footer"></div></div><h3 id="日期范围"><a href="#日期范围" class="header-anchor">#</a> 日期范围</h3> <div data-type="vue" data-config="" data-code-index="15" class="vuepress-plugin-demo-block__wrapper" style="display:none;"><div class="vuepress-plugin-demo-block__display"><div class="vuepress-plugin-demo-block__app"></div></div> <div class="vuepress-plugin-demo-block__code"><div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>form-build</span> <span class="token attr-name">:form-list</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>formList<span class="token punctuation">&quot;</span></span> <span class="token attr-name">ref</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>form<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>form-build</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      formList<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+        id<span class="token operator">:</span> <span class="token string">'date'</span><span class="token punctuation">,</span>
+        label<span class="token operator">:</span> <span class="token string">'选择日期范围'</span><span class="token punctuation">,</span>
+        component<span class="token operator">:</span> <span class="token string">'date-picker'</span><span class="token punctuation">,</span>
+        props<span class="token operator">:</span> <span class="token punctuation">{</span>
+          valueFormat<span class="token operator">:</span> <span class="token string">'yyyy-MM-dd'</span><span class="token punctuation">,</span>
+          startPlaceholder<span class="token operator">:</span> <span class="token string">'开始日期'</span><span class="token punctuation">,</span>
+          endPlaceholder<span class="token operator">:</span> <span class="token string">'结束日期'</span><span class="token punctuation">,</span>
+          type<span class="token operator">:</span> <span class="token string">'daterange'</span><span class="token punctuation">,</span>
+          clearable<span class="token operator">:</span> <span class="token boolean">true</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span><span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div></div> <script>
+    window.DEMO_BLOCK_MAP_15 = &quot;%3Ctemplate%3E%0A%20%20%3Cform-build%20%3Aform-list%3D%22formList%22%20ref%3D%22form%22%3E%3C%2Fform-build%3E%0A%3C%2Ftemplate%3E%0A%0A%3Cscript%3E%0Aexport%20default%20%7B%0A%20%20data()%20%7B%0A%20%20%20%20return%20%7B%0A%20%20%20%20%20%20formList%3A%20%5B%7B%0A%20%20%20%20%20%20%20%20id%3A%20'date'%2C%0A%20%20%20%20%20%20%20%20label%3A%20'%E9%80%89%E6%8B%A9%E6%97%A5%E6%9C%9F%E8%8C%83%E5%9B%B4'%2C%0A%20%20%20%20%20%20%20%20component%3A%20'date-picker'%2C%0A%20%20%20%20%20%20%20%20props%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20valueFormat%3A%20'yyyy-MM-dd'%2C%0A%20%20%20%20%20%20%20%20%20%20startPlaceholder%3A%20'%E5%BC%80%E5%A7%8B%E6%97%A5%E6%9C%9F'%2C%0A%20%20%20%20%20%20%20%20%20%20endPlaceholder%3A%20'%E7%BB%93%E6%9D%9F%E6%97%A5%E6%9C%9F'%2C%0A%20%20%20%20%20%20%20%20%20%20type%3A%20'daterange'%2C%0A%20%20%20%20%20%20%20%20%20%20clearable%3A%20true%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%7D%5D%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D%0A%3C%2Fscript%3E%0A&quot;
+  </script> <div class="vuepress-plugin-demo-block__footer"></div></div><h3 id="日期时间"><a href="#日期时间" class="header-anchor">#</a> 日期时间</h3> <div data-type="vue" data-config="" data-code-index="21" class="vuepress-plugin-demo-block__wrapper" style="display:none;"><div class="vuepress-plugin-demo-block__display"><div class="vuepress-plugin-demo-block__app"></div></div> <div class="vuepress-plugin-demo-block__code"><div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>form-build</span> <span class="token attr-name">:form-list</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>formList<span class="token punctuation">&quot;</span></span> <span class="token attr-name">ref</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>form<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>form-build</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      formList<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+        id<span class="token operator">:</span> <span class="token string">'date'</span><span class="token punctuation">,</span>
+        label<span class="token operator">:</span> <span class="token string">'选择时间范围'</span><span class="token punctuation">,</span>
+        component<span class="token operator">:</span> <span class="token string">'date-picker'</span><span class="token punctuation">,</span>
+        props<span class="token operator">:</span> <span class="token punctuation">{</span>
+          valueFormat<span class="token operator">:</span> <span class="token string">'yyyy-MM-dd HH:mm'</span><span class="token punctuation">,</span>
+          startPlaceholder<span class="token operator">:</span> <span class="token string">'开始时刻'</span><span class="token punctuation">,</span>
+          endPlaceholder<span class="token operator">:</span> <span class="token string">'结束时刻'</span><span class="token punctuation">,</span>
+          type<span class="token operator">:</span> <span class="token string">'datetimerange'</span><span class="token punctuation">,</span>
+          clearable<span class="token operator">:</span> <span class="token boolean">true</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span><span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div></div> <script>
+    window.DEMO_BLOCK_MAP_21 = &quot;%3Ctemplate%3E%0A%20%20%3Cform-build%20%3Aform-list%3D%22formList%22%20ref%3D%22form%22%3E%3C%2Fform-build%3E%0A%3C%2Ftemplate%3E%0A%0A%3Cscript%3E%0Aexport%20default%20%7B%0A%20%20data()%20%7B%0A%20%20%20%20return%20%7B%0A%20%20%20%20%20%20formList%3A%20%5B%7B%0A%20%20%20%20%20%20%20%20id%3A%20'date'%2C%0A%20%20%20%20%20%20%20%20label%3A%20'%E9%80%89%E6%8B%A9%E6%97%B6%E9%97%B4%E8%8C%83%E5%9B%B4'%2C%0A%20%20%20%20%20%20%20%20component%3A%20'date-picker'%2C%0A%20%20%20%20%20%20%20%20props%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20valueFormat%3A%20'yyyy-MM-dd%20HH%3Amm'%2C%0A%20%20%20%20%20%20%20%20%20%20startPlaceholder%3A%20'%E5%BC%80%E5%A7%8B%E6%97%B6%E5%88%BB'%2C%0A%20%20%20%20%20%20%20%20%20%20endPlaceholder%3A%20'%E7%BB%93%E6%9D%9F%E6%97%B6%E5%88%BB'%2C%0A%20%20%20%20%20%20%20%20%20%20type%3A%20'datetimerange'%2C%0A%20%20%20%20%20%20%20%20%20%20clearable%3A%20true%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%7D%5D%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D%0A%3C%2Fscript%3E%0A&quot;
+  </script> <div class="vuepress-plugin-demo-block__footer"></div></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/framework/ele-ui/radio/" class="prev">
+        Radio 单选框
+      </a></span> <span class="next"><a href="/framework/ele-ui/time-picker/">
+        TimePicker 时间选择器
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.a808a774.js" defer></script><script src="/assets/js/5.3faf06c3.js" defer></script><script src="/assets/js/24.941f7c42.js" defer></script>
+  </body>
+</html>

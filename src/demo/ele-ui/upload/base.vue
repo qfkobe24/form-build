@@ -10,7 +10,7 @@ export default {
         id: 'upload',
         label: '基础多图片上传',
         component: 'upload',
-        defaultValue: ['https://imgs.bestwehotel.com/images/inn/1af49bdMEi'],
+        defaultValue: ['https://pics2.baidu.com/feed/09fa513d269759eeabe5a125497eed116c22df31.jpeg?token=a6bcb611dbe75568d378376abd9809fd'],
         props: {
           listType: 'picture-card',
           multiple: true,

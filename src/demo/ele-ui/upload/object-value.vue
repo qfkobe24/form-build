@@ -10,7 +10,7 @@ export default {
         id: 'upload',
         label: '对象类型值',
         component: 'upload',
-        defaultValue: [{ name: '首图', url: 'https://imgs.bestwehotel.com/images/inn/1af49bdMEi' }],
+        defaultValue: [{ name: '首图', url: 'https://pics2.baidu.com/feed/09fa513d269759eeabe5a125497eed116c22df31.jpeg?token=a6bcb611dbe75568d378376abd9809fd' }],
         props: {
           listType: 'picture-card',
           multiple: true,

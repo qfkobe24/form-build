@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Slider滑块 | form-build</title>
+    <meta name="generator" content="VuePress 1.7.1">
+    <script src="/babel.min.js"></script>
+    <script src="/babel-plugin-transform-vue-jsx.min.js"></script>
+    <meta name="description" content="让表单使用更简单">
+    
+    <link rel="preload" href="/assets/css/0.styles.e1b8fdbd.css" as="style"><link rel="preload" href="/assets/js/app.a808a774.js" as="script"><link rel="preload" href="/assets/js/5.3faf06c3.js" as="script"><link rel="preload" href="/assets/js/30.61d954b6.js" as="script"><link rel="prefetch" href="/assets/js/1.f2b6a769.js"><link rel="prefetch" href="/assets/js/10.8b3ee0e5.js"><link rel="prefetch" href="/assets/js/11.8826a813.js"><link rel="prefetch" href="/assets/js/12.0819c27c.js"><link rel="prefetch" href="/assets/js/13.caf58102.js"><link rel="prefetch" href="/assets/js/14.6bab78f3.js"><link rel="prefetch" href="/assets/js/15.fa7f1e17.js"><link rel="prefetch" href="/assets/js/16.108bd8a4.js"><link rel="prefetch" href="/assets/js/17.ca2b1418.js"><link rel="prefetch" href="/assets/js/18.70585532.js"><link rel="prefetch" href="/assets/js/19.d45761c0.js"><link rel="prefetch" href="/assets/js/2.b02075fc.js"><link rel="prefetch" href="/assets/js/20.4489bf02.js"><link rel="prefetch" href="/assets/js/21.0808d176.js"><link rel="prefetch" href="/assets/js/22.b2d663d7.js"><link rel="prefetch" href="/assets/js/23.d9d5dce8.js"><link rel="prefetch" href="/assets/js/24.941f7c42.js"><link rel="prefetch" href="/assets/js/25.1460cfaa.js"><link rel="prefetch" href="/assets/js/26.b51bdf93.js"><link rel="prefetch" href="/assets/js/27.d565192f.js"><link rel="prefetch" href="/assets/js/28.0f29a101.js"><link rel="prefetch" href="/assets/js/29.5435a29e.js"><link rel="prefetch" href="/assets/js/31.17938a13.js"><link rel="prefetch" href="/assets/js/32.a3fd47d3.js"><link rel="prefetch" href="/assets/js/33.054156de.js"><link rel="prefetch" href="/assets/js/34.0d498a84.js"><link rel="prefetch" href="/assets/js/35.dbc8e460.js"><link rel="prefetch" href="/assets/js/36.ba71e489.js"><link rel="prefetch" href="/assets/js/37.bb88fefb.js"><link rel="prefetch" href="/assets/js/38.1347c34b.js"><link rel="prefetch" href="/assets/js/39.7656c371.js"><link rel="prefetch" href="/assets/js/40.bf785273.js"><link rel="prefetch" href="/assets/js/41.200d502b.js"><link rel="prefetch" href="/assets/js/42.6c2aeea0.js"><link rel="prefetch" href="/assets/js/43.4ecc6ed5.js"><link rel="prefetch" href="/assets/js/44.afadcd36.js"><link rel="prefetch" href="/assets/js/45.b9ed98fb.js"><link rel="prefetch" href="/assets/js/46.f9780eb6.js"><link rel="prefetch" href="/assets/js/47.01903a83.js"><link rel="prefetch" href="/assets/js/48.5a48b29c.js"><link rel="prefetch" href="/assets/js/49.7a116427.js"><link rel="prefetch" href="/assets/js/50.7bf562d0.js"><link rel="prefetch" href="/assets/js/51.27a4e653.js"><link rel="prefetch" href="/assets/js/52.30092d9b.js"><link rel="prefetch" href="/assets/js/6.dfc8b1b0.js"><link rel="prefetch" href="/assets/js/7.b316f874.js"><link rel="prefetch" href="/assets/js/8.aac83945.js"><link rel="prefetch" href="/assets/js/9.4cd90a6f.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.c28731ac.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.e1b8fdbd.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">form-build</span></a> <div class="links"><form id="search-form" role="search" class="algolia-search-wrapper search-box"><input id="algolia-search-input" class="search-query"></form> <nav class="nav-links can-hide"><div class="nav-item"><a href="/guide/" class="nav-link">
+  指南
+</a></div><div class="nav-item"><a href="/config/" class="nav-link">
+  配置
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="UI框架" class="dropdown-title"><span class="title">UI框架</span> <span class="arrow down"></span></button> <button type="button" aria-label="UI框架" class="mobile-dropdown-title"><span class="title">UI框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/framework/ele-ui/" class="nav-link router-link-active">
+  ElementUI
+</a></li><li class="dropdown-item"><!----> <a href="/framework/vant/" class="nav-link">
+  Vant
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="demo" class="dropdown-title"><span class="title">demo</span> <span class="arrow down"></span></button> <button type="button" aria-label="demo" class="mobile-dropdown-title"><span class="title">demo</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/demo/ele-ui/" class="nav-link">
+  ElementUI
+</a></li><li class="dropdown-item"><!----> <a href="/demo/vant/" class="nav-link">
+  Vant
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/guide/" class="nav-link">
+  指南
+</a></div><div class="nav-item"><a href="/config/" class="nav-link">
+  配置
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="UI框架" class="dropdown-title"><span class="title">UI框架</span> <span class="arrow down"></span></button> <button type="button" aria-label="UI框架" class="mobile-dropdown-title"><span class="title">UI框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/framework/ele-ui/" class="nav-link router-link-active">
+  ElementUI
+</a></li><li class="dropdown-item"><!----> <a href="/framework/vant/" class="nav-link">
+  Vant
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="demo" class="dropdown-title"><span class="title">demo</span> <span class="arrow down"></span></button> <button type="button" aria-label="demo" class="mobile-dropdown-title"><span class="title">demo</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/demo/ele-ui/" class="nav-link">
+  ElementUI
+</a></li><li class="dropdown-item"><!----> <a href="/demo/vant/" class="nav-link">
+  Vant
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>快速上手</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/framework/ele-ui/" class="sidebar-link">介绍</a></li><li><a href="/framework/ele-ui/install/" class="sidebar-link">安装使用</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>内置组件</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/framework/ele-ui/input/" class="sidebar-link">Input 输入框</a></li><li><a href="/framework/ele-ui/autocomplete/" class="sidebar-link">Autocomplete 输入框</a></li><li><a href="/framework/ele-ui/input-number/" class="sidebar-link">InputNumber 计数器</a></li><li><a href="/framework/ele-ui/switch/" class="sidebar-link">Switch 开关</a></li><li><a href="/framework/ele-ui/slider/" class="active sidebar-link">Slider滑块</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/framework/ele-ui/select/" class="sidebar-link">Select 选择器</a></li><li><a href="/framework/ele-ui/cascader/" class="sidebar-link">Cascader 级联选择器</a></li><li><a href="/framework/ele-ui/checkbox/" class="sidebar-link">Checkbox 多选框</a></li><li><a href="/framework/ele-ui/radio/" class="sidebar-link">Radio 单选框</a></li><li><a href="/framework/ele-ui/date-picker/" class="sidebar-link">DatePicker 日期时间选择器</a></li><li><a href="/framework/ele-ui/time-picker/" class="sidebar-link">TimePicker 时间选择器</a></li><li><a href="/framework/ele-ui/time-select/" class="sidebar-link">TimeSelect 时间选项选择器</a></li><li><a href="/framework/ele-ui/upload/" class="sidebar-link">Upload 文件上传</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="slider-滑块"><a href="#slider-滑块" class="header-anchor">#</a> Slider 滑块</h1> <h3 id="基础用法"><a href="#基础用法" class="header-anchor">#</a> 基础用法</h3> <div data-type="vue" data-config="" data-code-index="7" class="vuepress-plugin-demo-block__wrapper" style="display:none;"><div class="vuepress-plugin-demo-block__display"><div class="vuepress-plugin-demo-block__app"></div></div> <div class="vuepress-plugin-demo-block__code"><div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>form-build</span> <span class="token attr-name">:form-list</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>formList<span class="token punctuation">&quot;</span></span> <span class="token attr-name">ref</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>form<span class="token punctuation">&quot;</span></span> <span class="token attr-name">labelWidth</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>120<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>form-build</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      formList<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+        id<span class="token operator">:</span> <span class="token string">'slider'</span><span class="token punctuation">,</span>
+        label<span class="token operator">:</span> <span class="token string">'默认'</span><span class="token punctuation">,</span>
+        component<span class="token operator">:</span> <span class="token string">'slider'</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div></div> <script>
+    window.DEMO_BLOCK_MAP_7 = &quot;%3Ctemplate%3E%0A%20%20%3Cform-build%20%3Aform-list%3D%22formList%22%20ref%3D%22form%22%20labelWidth%3D%22120%22%3E%3C%2Fform-build%3E%0A%3C%2Ftemplate%3E%0A%0A%3Cscript%3E%0Aexport%20default%20%7B%0A%20%20data()%20%7B%0A%20%20%20%20return%20%7B%0A%20%20%20%20%20%20formList%3A%20%5B%7B%0A%20%20%20%20%20%20%20%20id%3A%20'slider'%2C%0A%20%20%20%20%20%20%20%20label%3A%20'%E9%BB%98%E8%AE%A4'%2C%0A%20%20%20%20%20%20%20%20component%3A%20'slider'%2C%0A%20%20%20%20%20%20%7D%5D%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D%0A%3C%2Fscript%3E%0A&quot;
+  </script> <div class="vuepress-plugin-demo-block__footer"></div></div><h3 id="自定义初始值"><a href="#自定义初始值" class="header-anchor">#</a> 自定义初始值</h3> <div data-type="vue" data-config="" data-code-index="13" class="vuepress-plugin-demo-block__wrapper" style="display:none;"><div class="vuepress-plugin-demo-block__display"><div class="vuepress-plugin-demo-block__app"></div></div> <div class="vuepress-plugin-demo-block__code"><div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>form-build</span> <span class="token attr-name">:form-list</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>formList<span class="token punctuation">&quot;</span></span> <span class="token attr-name">ref</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>form<span class="token punctuation">&quot;</span></span> <span class="token attr-name">:model</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>model<span class="token punctuation">&quot;</span></span> <span class="token attr-name">labelWidth</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>120<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>form-build</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      model<span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token keyword">default</span><span class="token operator">:</span> <span class="token number">50</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      formList<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+        id<span class="token operator">:</span> <span class="token string">'default'</span><span class="token punctuation">,</span>
+        label<span class="token operator">:</span> <span class="token string">'自定义初始值'</span><span class="token punctuation">,</span>
+        component<span class="token operator">:</span> <span class="token string">'slider'</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  methods<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token function">formatTooltip</span><span class="token punctuation">(</span><span class="token parameter">val</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> val <span class="token operator">/</span> <span class="token number">100</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div></div> <script>
+    window.DEMO_BLOCK_MAP_13 = &quot;%3Ctemplate%3E%0A%20%20%3Cform-build%20%3Aform-list%3D%22formList%22%20ref%3D%22form%22%20%3Amodel%3D%22model%22%20labelWidth%3D%22120%22%3E%3C%2Fform-build%3E%0A%3C%2Ftemplate%3E%0A%0A%3Cscript%3E%0Aexport%20default%20%7B%0A%20%20data()%20%7B%0A%20%20%20%20return%20%7B%0A%20%20%20%20%20%20model%3A%20%7B%0A%20%20%20%20%20%20%20%20default%3A%2050%2C%0A%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20formList%3A%20%5B%7B%0A%20%20%20%20%20%20%20%20id%3A%20'default'%2C%0A%20%20%20%20%20%20%20%20label%3A%20'%E8%87%AA%E5%AE%9A%E4%B9%89%E5%88%9D%E5%A7%8B%E5%80%BC'%2C%0A%20%20%20%20%20%20%20%20component%3A%20'slider'%2C%0A%20%20%20%20%20%20%7D%5D%0A%20%20%20%20%7D%0A%20%20%7D%2C%0A%20%20methods%3A%20%7B%0A%20%20%20%20formatTooltip(val)%20%7B%0A%20%20%20%20%20%20return%20val%20%2F%20100%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D%0A%3C%2Fscript%3E%0A&quot;
+  </script> <div class="vuepress-plugin-demo-block__footer"></div></div><h3 id="tooltip提示"><a href="#tooltip提示" class="header-anchor">#</a> Tooltip提示</h3> <div data-type="vue" data-config="" data-code-index="19" class="vuepress-plugin-demo-block__wrapper" style="display:none;"><div class="vuepress-plugin-demo-block__display"><div class="vuepress-plugin-demo-block__app"></div></div> <div class="vuepress-plugin-demo-block__code"><div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>form-build</span> <span class="token attr-name">:form-list</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>formList<span class="token punctuation">&quot;</span></span> <span class="token attr-name">ref</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>form<span class="token punctuation">&quot;</span></span>  <span class="token attr-name">labelWidth</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>120<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>form-build</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      formList<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+        id<span class="token operator">:</span> <span class="token string">'hinde'</span><span class="token punctuation">,</span>
+        label<span class="token operator">:</span> <span class="token string">'隐藏Tooltip'</span><span class="token punctuation">,</span>
+        component<span class="token operator">:</span> <span class="token string">'slider'</span><span class="token punctuation">,</span>
+        props<span class="token operator">:</span> <span class="token punctuation">{</span>
+          showTooltip<span class="token operator">:</span> <span class="token boolean">false</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+        id<span class="token operator">:</span> <span class="token string">'format'</span><span class="token punctuation">,</span>
+        label<span class="token operator">:</span> <span class="token string">'格式化Tooltip'</span><span class="token punctuation">,</span>
+        component<span class="token operator">:</span> <span class="token string">'slider'</span><span class="token punctuation">,</span>
+        props<span class="token operator">:</span> <span class="token punctuation">{</span>
+          formatTooltip<span class="token operator">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span>formatTooltip
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span><span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  methods<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token function">formatTooltip</span><span class="token punctuation">(</span><span class="token parameter">val</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> val <span class="token operator">/</span> <span class="token number">100</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div></div> <script>
+    window.DEMO_BLOCK_MAP_19 = &quot;%3Ctemplate%3E%0A%20%20%3Cform-build%20%3Aform-list%3D%22formList%22%20ref%3D%22form%22%20%20labelWidth%3D%22120%22%3E%3C%2Fform-build%3E%0A%3C%2Ftemplate%3E%0A%0A%3Cscript%3E%0Aexport%20default%20%7B%0A%20%20data()%20%7B%0A%20%20%20%20return%20%7B%0A%20%20%20%20%20%20formList%3A%20%5B%7B%0A%20%20%20%20%20%20%20%20id%3A%20'hinde'%2C%0A%20%20%20%20%20%20%20%20label%3A%20'%E9%9A%90%E8%97%8FTooltip'%2C%0A%20%20%20%20%20%20%20%20component%3A%20'slider'%2C%0A%20%20%20%20%20%20%20%20props%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20showTooltip%3A%20false%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%7D%2C%20%7B%0A%20%20%20%20%20%20%20%20id%3A%20'format'%2C%0A%20%20%20%20%20%20%20%20label%3A%20'%E6%A0%BC%E5%BC%8F%E5%8C%96Tooltip'%2C%0A%20%20%20%20%20%20%20%20component%3A%20'slider'%2C%0A%20%20%20%20%20%20%20%20props%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20formatTooltip%3A%20this.formatTooltip%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%7D%5D%0A%20%20%20%20%7D%0A%20%20%7D%2C%0A%20%20methods%3A%20%7B%0A%20%20%20%20formatTooltip(val)%20%7B%0A%20%20%20%20%20%20return%20val%20%2F%20100%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D%0A%3C%2Fscript%3E%0A&quot;
+  </script> <div class="vuepress-plugin-demo-block__footer"></div></div><h3 id="离散值"><a href="#离散值" class="header-anchor">#</a> 离散值</h3> <div data-type="vue" data-config="" data-code-index="25" class="vuepress-plugin-demo-block__wrapper" style="display:none;"><div class="vuepress-plugin-demo-block__display"><div class="vuepress-plugin-demo-block__app"></div></div> <div class="vuepress-plugin-demo-block__code"><div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>form-build</span> <span class="token attr-name">:form-list</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>formList<span class="token punctuation">&quot;</span></span> <span class="token attr-name">ref</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>form<span class="token punctuation">&quot;</span></span> <span class="token attr-name">labelWidth</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>120<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>form-build</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      formList<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+        id<span class="token operator">:</span> <span class="token string">'discrete_1'</span><span class="token punctuation">,</span>
+        label<span class="token operator">:</span> <span class="token string">'不显示间断点'</span><span class="token punctuation">,</span>
+        component<span class="token operator">:</span> <span class="token string">'slider'</span><span class="token punctuation">,</span>
+        props<span class="token operator">:</span> <span class="token punctuation">{</span>
+          step<span class="token operator">:</span> <span class="token number">5</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+        id<span class="token operator">:</span> <span class="token string">'discrete_2'</span><span class="token punctuation">,</span>
+        label<span class="token operator">:</span> <span class="token string">'显示间断点'</span><span class="token punctuation">,</span>
+        component<span class="token operator">:</span> <span class="token string">'slider'</span><span class="token punctuation">,</span>
+        props<span class="token operator">:</span> <span class="token punctuation">{</span>
+          step<span class="token operator">:</span> <span class="token number">10</span><span class="token punctuation">,</span>
+          showStops<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span><span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  methods<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token function">formatTooltip</span><span class="token punctuation">(</span><span class="token parameter">val</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> val <span class="token operator">/</span> <span class="token number">100</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div></div> <script>
+    window.DEMO_BLOCK_MAP_25 = &quot;%3Ctemplate%3E%0A%20%20%3Cform-build%20%3Aform-list%3D%22formList%22%20ref%3D%22form%22%20labelWidth%3D%22120%22%3E%3C%2Fform-build%3E%0A%3C%2Ftemplate%3E%0A%0A%3Cscript%3E%0Aexport%20default%20%7B%0A%20%20data()%20%7B%0A%20%20%20%20return%20%7B%0A%20%20%20%20%20%20formList%3A%20%5B%7B%0A%20%20%20%20%20%20%20%20id%3A%20'discrete_1'%2C%0A%20%20%20%20%20%20%20%20label%3A%20'%E4%B8%8D%E6%98%BE%E7%A4%BA%E9%97%B4%E6%96%AD%E7%82%B9'%2C%0A%20%20%20%20%20%20%20%20component%3A%20'slider'%2C%0A%20%20%20%20%20%20%20%20props%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20step%3A%205%2C%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%7D%2C%20%7B%0A%20%20%20%20%20%20%20%20id%3A%20'discrete_2'%2C%0A%20%20%20%20%20%20%20%20label%3A%20'%E6%98%BE%E7%A4%BA%E9%97%B4%E6%96%AD%E7%82%B9'%2C%0A%20%20%20%20%20%20%20%20component%3A%20'slider'%2C%0A%20%20%20%20%20%20%20%20props%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20step%3A%2010%2C%0A%20%20%20%20%20%20%20%20%20%20showStops%3A%20true%2C%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%7D%5D%0A%20%20%20%20%7D%0A%20%20%7D%2C%0A%20%20methods%3A%20%7B%0A%20%20%20%20formatTooltip(val)%20%7B%0A%20%20%20%20%20%20return%20val%20%2F%20100%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D%0A%3C%2Fscript%3E%0A&quot;
+  </script> <div class="vuepress-plugin-demo-block__footer"></div></div><h3 id="带有输入框"><a href="#带有输入框" class="header-anchor">#</a> 带有输入框</h3> <div data-type="vue" data-config="" data-code-index="31" class="vuepress-plugin-demo-block__wrapper" style="display:none;"><div class="vuepress-plugin-demo-block__display"><div class="vuepress-plugin-demo-block__app"></div></div> <div class="vuepress-plugin-demo-block__code"><div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>form-build</span> <span class="token attr-name">:form-list</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>formList<span class="token punctuation">&quot;</span></span> <span class="token attr-name">ref</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>form<span class="token punctuation">&quot;</span></span> <span class="token attr-name">labelWidth</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>120<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>form-build</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      formList<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+        id<span class="token operator">:</span> <span class="token string">'sliderInput'</span><span class="token punctuation">,</span>
+        label<span class="token operator">:</span> <span class="token string">'带输入框'</span><span class="token punctuation">,</span>
+        component<span class="token operator">:</span> <span class="token string">'slider'</span><span class="token punctuation">,</span>
+        props<span class="token operator">:</span> <span class="token punctuation">{</span>
+          showInput<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span><span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div></div> <script>
+    window.DEMO_BLOCK_MAP_31 = &quot;%3Ctemplate%3E%0A%20%20%3Cform-build%20%3Aform-list%3D%22formList%22%20ref%3D%22form%22%20labelWidth%3D%22120%22%3E%3C%2Fform-build%3E%0A%3C%2Ftemplate%3E%0A%0A%3Cscript%3E%0Aexport%20default%20%7B%0A%20%20data()%20%7B%0A%20%20%20%20return%20%7B%0A%20%20%20%20%20%20formList%3A%20%5B%7B%0A%20%20%20%20%20%20%20%20id%3A%20'sliderInput'%2C%0A%20%20%20%20%20%20%20%20label%3A%20'%E5%B8%A6%E8%BE%93%E5%85%A5%E6%A1%86'%2C%0A%20%20%20%20%20%20%20%20component%3A%20'slider'%2C%0A%20%20%20%20%20%20%20%20props%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20showInput%3A%20true%2C%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%7D%5D%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D%0A%3C%2Fscript%3E%0A&quot;
+  </script> <div class="vuepress-plugin-demo-block__footer"></div></div><h3 id="范围选择"><a href="#范围选择" class="header-anchor">#</a> 范围选择</h3> <div data-type="vue" data-config="" data-code-index="37" class="vuepress-plugin-demo-block__wrapper" style="display:none;"><div class="vuepress-plugin-demo-block__display"><div class="vuepress-plugin-demo-block__app"></div></div> <div class="vuepress-plugin-demo-block__code"><div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>form-build</span> <span class="token attr-name">:form-list</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>formList<span class="token punctuation">&quot;</span></span> <span class="token attr-name">ref</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>form<span class="token punctuation">&quot;</span></span> <span class="token attr-name">:model</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>model<span class="token punctuation">&quot;</span></span> <span class="token attr-name">labelWidth</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>120<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>form-build</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      model<span class="token operator">:</span> <span class="token punctuation">{</span>
+        range<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">20</span><span class="token punctuation">,</span> <span class="token number">40</span><span class="token punctuation">]</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      formList<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+        id<span class="token operator">:</span> <span class="token string">'range'</span><span class="token punctuation">,</span>
+        label<span class="token operator">:</span> <span class="token string">'范围'</span><span class="token punctuation">,</span>
+        component<span class="token operator">:</span> <span class="token string">'slider'</span><span class="token punctuation">,</span>
+        props<span class="token operator">:</span> <span class="token punctuation">{</span>
+          range<span class="token operator">:</span> <span class="token boolean">true</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div></div> <script>
+    window.DEMO_BLOCK_MAP_37 = &quot;%3Ctemplate%3E%0A%20%20%3Cform-build%20%3Aform-list%3D%22formList%22%20ref%3D%22form%22%20%3Amodel%3D%22model%22%20labelWidth%3D%22120%22%3E%3C%2Fform-build%3E%0A%3C%2Ftemplate%3E%0A%0A%3Cscript%3E%0Aexport%20default%20%7B%0A%20%20data()%20%7B%0A%20%20%20%20return%20%7B%0A%20%20%20%20%20%20model%3A%20%7B%0A%20%20%20%20%20%20%20%20range%3A%20%5B20%2C%2040%5D%0A%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20formList%3A%20%5B%7B%0A%20%20%20%20%20%20%20%20id%3A%20'range'%2C%0A%20%20%20%20%20%20%20%20label%3A%20'%E8%8C%83%E5%9B%B4'%2C%0A%20%20%20%20%20%20%20%20component%3A%20'slider'%2C%0A%20%20%20%20%20%20%20%20props%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20range%3A%20true%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%7D%5D%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D%0A%3C%2Fscript%3E%0A&quot;
+  </script> <div class="vuepress-plugin-demo-block__footer"></div></div><h3 id="竖向模式"><a href="#竖向模式" class="header-anchor">#</a> 竖向模式</h3> <div data-type="vue" data-config="" data-code-index="43" class="vuepress-plugin-demo-block__wrapper" style="display:none;"><div class="vuepress-plugin-demo-block__display"><div class="vuepress-plugin-demo-block__app"></div></div> <div class="vuepress-plugin-demo-block__code"><div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>form-build</span> <span class="token attr-name">:form-list</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>formList<span class="token punctuation">&quot;</span></span> <span class="token attr-name">ref</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>form<span class="token punctuation">&quot;</span></span> <span class="token attr-name">labelWidth</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>120<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>form-build</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      formList<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+        id<span class="token operator">:</span> <span class="token string">'slider'</span><span class="token punctuation">,</span>
+        label<span class="token operator">:</span> <span class="token string">'竖向'</span><span class="token punctuation">,</span>
+        component<span class="token operator">:</span> <span class="token string">'slider'</span><span class="token punctuation">,</span>
+        props<span class="token operator">:</span> <span class="token punctuation">{</span>
+          vertical<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+          height<span class="token operator">:</span> <span class="token string">'200px'</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div></div> <script>
+    window.DEMO_BLOCK_MAP_43 = &quot;%3Ctemplate%3E%0A%20%20%3Cform-build%20%3Aform-list%3D%22formList%22%20ref%3D%22form%22%20labelWidth%3D%22120%22%3E%3C%2Fform-build%3E%0A%3C%2Ftemplate%3E%0A%0A%3Cscript%3E%0Aexport%20default%20%7B%0A%20%20data()%20%7B%0A%20%20%20%20return%20%7B%0A%20%20%20%20%20%20formList%3A%20%5B%7B%0A%20%20%20%20%20%20%20%20id%3A%20'slider'%2C%0A%20%20%20%20%20%20%20%20label%3A%20'%E7%AB%96%E5%90%91'%2C%0A%20%20%20%20%20%20%20%20component%3A%20'slider'%2C%0A%20%20%20%20%20%20%20%20props%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20vertical%3A%20true%2C%0A%20%20%20%20%20%20%20%20%20%20height%3A%20'200px'%2C%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%7D%5D%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D%0A%3C%2Fscript%3E%0A&quot;
+  </script> <div class="vuepress-plugin-demo-block__footer"></div></div><h3 id="展示标记"><a href="#展示标记" class="header-anchor">#</a> 展示标记</h3> <div data-type="vue" data-config="" data-code-index="49" class="vuepress-plugin-demo-block__wrapper" style="display:none;"><div class="vuepress-plugin-demo-block__display"><div class="vuepress-plugin-demo-block__app"></div></div> <div class="vuepress-plugin-demo-block__code"><div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>form-build</span> <span class="token attr-name">:form-list</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>formList<span class="token punctuation">&quot;</span></span> <span class="token attr-name">ref</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>form<span class="token punctuation">&quot;</span></span> <span class="token attr-name">labelWidth</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>120<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>form-build</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      formList<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+        id<span class="token operator">:</span> <span class="token string">'mark'</span><span class="token punctuation">,</span>
+        label<span class="token operator">:</span> <span class="token string">'展示标识'</span><span class="token punctuation">,</span>
+        component<span class="token operator">:</span> <span class="token string">'slider'</span><span class="token punctuation">,</span>
+        props<span class="token operator">:</span> <span class="token punctuation">{</span>
+          marks<span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token number">0</span><span class="token operator">:</span> <span class="token string">'0°C'</span><span class="token punctuation">,</span>
+            <span class="token number">8</span><span class="token operator">:</span> <span class="token string">'8°C'</span><span class="token punctuation">,</span>
+            <span class="token number">37</span><span class="token operator">:</span> <span class="token string">'37°C'</span><span class="token punctuation">,</span>
+            <span class="token number">50</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+              style<span class="token operator">:</span> <span class="token punctuation">{</span>
+                color<span class="token operator">:</span> <span class="token string">'#1989FA'</span>
+              <span class="token punctuation">}</span><span class="token punctuation">,</span>
+              label<span class="token operator">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">$createElement</span><span class="token punctuation">(</span><span class="token string">'strong'</span><span class="token punctuation">,</span> <span class="token string">'50%'</span><span class="token punctuation">)</span>
+            <span class="token punctuation">}</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div></div> <script>
+    window.DEMO_BLOCK_MAP_49 = &quot;%3Ctemplate%3E%0A%20%20%3Cform-build%20%3Aform-list%3D%22formList%22%20ref%3D%22form%22%20labelWidth%3D%22120%22%3E%3C%2Fform-build%3E%0A%3C%2Ftemplate%3E%0A%0A%3Cscript%3E%0Aexport%20default%20%7B%0A%20%20data()%20%7B%0A%20%20%20%20return%20%7B%0A%20%20%20%20%20%20formList%3A%20%5B%7B%0A%20%20%20%20%20%20%20%20id%3A%20'mark'%2C%0A%20%20%20%20%20%20%20%20label%3A%20'%E5%B1%95%E7%A4%BA%E6%A0%87%E8%AF%86'%2C%0A%20%20%20%20%20%20%20%20component%3A%20'slider'%2C%0A%20%20%20%20%20%20%20%20props%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20marks%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%200%3A%20'0%C2%B0C'%2C%0A%20%20%20%20%20%20%20%20%20%20%20%208%3A%20'8%C2%B0C'%2C%0A%20%20%20%20%20%20%20%20%20%20%20%2037%3A%20'37%C2%B0C'%2C%0A%20%20%20%20%20%20%20%20%20%20%20%2050%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20style%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20color%3A%20'%231989FA'%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20label%3A%20this.%24createElement('strong'%2C%20'50%25')%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%7D%5D%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D%0A%3C%2Fscript%3E%0A&quot;
+  </script> <div class="vuepress-plugin-demo-block__footer"></div></div><h3 id="props"><a href="#props" class="header-anchor">#</a> Props</h3> <p>参考<a href="https://element.eleme.io/#/zh-CN/component/slider#attributes" target="_blank" rel="noopener noreferrer">Slider Attributes<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> 的attributes配置。</p> <h3 id="slots"><a href="#slots" class="header-anchor">#</a> Slots</h3> <p>无</p> <h3 id="events"><a href="#events" class="header-anchor">#</a> Events</h3> <p>参考<a href="https://element.eleme.cn/#/zh-CN/component/slider#slider-events" target="_blank" rel="noopener noreferrer">Slider Events<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/framework/ele-ui/switch/" class="prev">
+        Switch 开关
+      </a></span> <span class="next"><a href="/framework/ele-ui/select/">
+        Select 选择器
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.a808a774.js" defer></script><script src="/assets/js/5.3faf06c3.js" defer></script><script src="/assets/js/30.61d954b6.js" defer></script>
+  </body>
+</html>
