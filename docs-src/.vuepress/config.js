@@ -2,6 +2,7 @@
 const path = require('path')
 
 module.exports = {
+  base: '/form-build/',
   port: '9093',
   title: 'form-build',
   description: '让表单使用更简单',
